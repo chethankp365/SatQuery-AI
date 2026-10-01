@@ -354,11 +354,11 @@ Keep API keys (for example the Gemini key) in a `.env` file and never commit it.
 
 <div align="center">
 
-**Team ZeroOne** · Team ID 127589 · Atria Institute of Technology
+**Team ZeroOne**
 
-<!-- Add team members:
-| Name | Role | GitHub |
-|---|---|---|
--->
+| Member | GitHub |
+|---|---|
+| **Chethan Kumar KP** | [@chethankp365](https://github.com/chethankp365) |
+| **Yogendra G** | [@yogendrag196-dev](https://github.com/yogendrag196-dev) |
 
 </div>
