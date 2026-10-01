@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/hero-banner.svg" alt="SatQuery AI" width="100%"/>
+<img src="./hero-banner.svg" alt="SatQuery AI" width="100%"/>
 
 <br/>
 
@@ -22,7 +22,7 @@
 </div>
 
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
 ## Overview
@@ -36,7 +36,7 @@ SatQuery AI replaces that chain with a single step:
 Ask a question in plain language. An agentic orchestrator validates the input, picks the right models (object detection, change detection, spectral indices, a vision-language model), fuses optical, SAR and temporal evidence, and returns an answer where every number is traceable to a model output.
 
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
 ## See it in action
@@ -44,17 +44,17 @@ Ask a question in plain language. An agentic orchestrator validates the input, p
 The loop below shows one full query: typed, routed through the tool pipeline, and answered with grounded detections on the map.
 
 <div align="center">
-  <img src="./assets/query-demo.svg" alt="Animated demo of a query being typed, routed and answered with ship detections" width="100%"/>
+  <img src="./query-demo.svg" alt="Animated demo of a query being typed, routed and answered with ship detections" width="100%"/>
 </div>
 
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
 ## How it works
 
 <div align="center">
-  <img src="./assets/pipeline.svg" alt="Five-stage animated pipeline" width="100%"/>
+  <img src="./pipeline.svg" alt="Five-stage animated pipeline" width="100%"/>
 </div>
 
 <br/>
@@ -64,7 +64,7 @@ The loop below shows one full query: typed, routed through the tool pipeline, an
 Different questions light up different paths. A ship-counting query uses the detector and the VLM. A flood query switches to spectral indices, change detection and SAR.
 
 <div align="center">
-  <img src="./assets/agent-dag.svg" alt="Agent selects different specialist models per query" width="100%"/>
+  <img src="./agent-dag.svg" alt="Agent selects different specialist models per query" width="100%"/>
 </div>
 
 ### Full flow
@@ -116,7 +116,7 @@ sequenceDiagram
 ```
 
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
 ## Multi-sensor intelligence
@@ -125,24 +125,24 @@ sequenceDiagram
 When clouds block the optical pass, SAR fills the gap, so the answer never goes dark.
 
 <div align="center">
-  <img src="./assets/sensor-fusion.svg" alt="Optical and SAR fusion producing a cloud-free result" width="100%"/>
+  <img src="./sensor-fusion.svg" alt="Optical and SAR fusion producing a cloud-free result" width="100%"/>
 </div>
 
 ### Change detection
 Bi-temporal SSIM / CVA and NDWI thresholds turn two passes into a change map with a measured area.
 
 <div align="center">
-  <img src="./assets/change-detection.svg" alt="Before and after swipe comparison with change map" width="100%"/>
+  <img src="./change-detection.svg" alt="Before and after swipe comparison with change map" width="100%"/>
 </div>
 
 ### Proactive alerts
 AOIs are monitored continuously, and each alert opens the affected mission in one click.
 
 <div align="center">
-  <img src="./assets/alerts.svg" alt="Active mission change alerts" width="100%"/>
+  <img src="./alerts.svg" alt="Active mission change alerts" width="100%"/>
 </div>
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 ## Key features
 
@@ -158,7 +158,7 @@ AOIs are monitored continuously, and each alert opens the affected mission in on
 | **Exportable dossiers** | PDF, GeoJSON and CSV metrics in one click |
 
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
 ## Console screenshots
@@ -168,47 +168,47 @@ Screenshots from the running prototype.
 **Ground station gateway.** Operator authentication before the console opens.
 
 <div align="center">
-  <img src="./Screenshot_2026-09-04_014815.png" alt="Ground station authentication" width="85%"/>
+  <img src="./satquery-01-gateway.png" alt="Ground station authentication" width="85%"/>
 </div>
 
 **Agentic query console.** A harbor query being routed over Mumbai Port & Naval Dockyard.
 
 <div align="center">
-  <img src="./Screenshot_2026-09-04_015506.png" alt="Query routing in the console" width="100%"/>
+  <img src="./satquery-02-query-routing.png" alt="Query routing in the console" width="100%"/>
 </div>
 
 **Full tactical HUD.** Monitored zones, AOI bounding box, sensor composites, map toggles and the intelligence panel.
 
 <div align="center">
-  <img src="./Screenshot_2026-09-04_022044.png" alt="Full HUD mission console" width="100%"/>
+  <img src="./satquery-03-full-hud.png" alt="Full HUD mission console" width="100%"/>
 </div>
 
 **Proactive monitor alerts.** The system watches AOIs and surfaces changes with a one-click inspect action.
 
 <div align="center">
-  <img src="./Screenshot_2026-09-04_022529.png" alt="Proactive monitor alert" width="100%"/>
+  <img src="./satquery-04-proactive-alert.png" alt="Proactive monitor alert" width="100%"/>
 </div>
 
 **Any mission, any query.** The same console handling a Western Ghats forest-fire query.
 
 <div align="center">
-  <img src="./Screenshot_2026-09-04_110451.png" alt="Forest fire query in Western Ghats" width="100%"/>
+  <img src="./satquery-05-western-ghats.png" alt="Forest fire query in Western Ghats" width="100%"/>
 </div>
 
 **Built-in architecture and alerts view.**
 
 <div align="center">
-  <img src="./Screenshot_2026-09-04_093543.png" alt="Architecture and alerts view" width="100%"/>
+  <img src="./satquery-06-architecture.png" alt="Architecture and alerts view" width="100%"/>
 </div>
 
 **Compact query panel.**
 
 <div align="center">
-  <img src="./Screenshot_2026-09-04_100328.png" alt="Compact query console" width="38%"/>
+  <img src="./satquery-07-compact-panel.png" alt="Compact query console" width="38%"/>
 </div>
 
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
 ## Sensor composites and monitored zones
@@ -239,13 +239,13 @@ forest fires in Western Ghats
 ```
 
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
 ## Feasibility
 
 <div align="center">
-  <img src="./assets/feasibility.svg" alt="Technology readiness chart, 87% overall feasibility" width="100%"/>
+  <img src="./feasibility.svg" alt="Technology readiness chart, 87% overall feasibility" width="100%"/>
 </div>
 
 ### Risks and mitigation
@@ -261,7 +261,7 @@ forest fires in Western Ghats
 An offline deterministic demo mode keeps the system demonstrable in any environment.
 
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
 ## User flow
@@ -285,7 +285,7 @@ flowchart TD
 ```
 
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
 ## Impact
@@ -301,7 +301,7 @@ flowchart TD
 **National alignment:** UN SDG 9, 11, 13, 15. Indigenously built AI for sovereign geospatial intelligence, supporting India's climate and disaster-resilience goals.
 
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
 ## Tech stack
@@ -315,7 +315,7 @@ flowchart TD
 | Data and audit | Optical, SAR and benchmark datasets, MongoDB audit trail |
 
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
 ## Getting started
@@ -336,7 +336,7 @@ python app.py
 Keep API keys (for example the Gemini key) in a `.env` file and never commit it.
 
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
 ## References
@@ -349,16 +349,16 @@ Keep API keys (for example the Gemini key) in a `.env` file and never commit it.
 | GeoChat: Grounded Large Vision-Language Model for Remote Sensing | Remote-sensing VLM reference |
 
 
-<div align="center"><img src="./assets/divider.svg" alt="" width="100%"/></div>
+<div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
 <div align="center">
 
-**Team ZeroOne**
+**Team ZeroOne_Atria_SW_26** · Team ID 127589 · Atria Institute of Technology
 
-| Member | GitHub |
-|---|---|
-| **Chethan Kumar KP** | [@chethankp365](https://github.com/chethankp365) |
-| **Yogendra G** | [@yogendrag196-dev](https://github.com/yogendrag196-dev) |
+<!-- Add team members:
+| Name | Role | GitHub |
+|---|---|---|
+-->
 
 </div>
