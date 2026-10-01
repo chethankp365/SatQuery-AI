@@ -168,43 +168,43 @@ Screenshots from the running prototype.
 **Ground station gateway.** Operator authentication before the console opens.
 
 <div align="center">
-  <img src="./satquery-01-gateway.png" alt="Ground station authentication" width="85%"/>
+  <img src="./Screenshot%202026-09-04%20014815.png" alt="Ground station authentication" width="85%"/>
 </div>
 
 **Agentic query console.** A harbor query being routed over Mumbai Port & Naval Dockyard.
 
 <div align="center">
-  <img src="./satquery-02-query-routing.png" alt="Query routing in the console" width="100%"/>
+  <img src="./Screenshot%202026-09-04%20015506.png" alt="Query routing in the console" width="100%"/>
 </div>
 
 **Full tactical HUD.** Monitored zones, AOI bounding box, sensor composites, map toggles and the intelligence panel.
 
 <div align="center">
-  <img src="./satquery-03-full-hud.png" alt="Full HUD mission console" width="100%"/>
+  <img src="./Screenshot%202026-09-04%20022044.png" alt="Full HUD mission console" width="100%"/>
 </div>
 
 **Proactive monitor alerts.** The system watches AOIs and surfaces changes with a one-click inspect action.
 
 <div align="center">
-  <img src="./satquery-04-proactive-alert.png" alt="Proactive monitor alert" width="100%"/>
+  <img src="./Screenshot%202026-09-04%20022529.png" alt="Proactive monitor alert" width="100%"/>
 </div>
 
 **Any mission, any query.** The same console handling a Western Ghats forest-fire query.
 
 <div align="center">
-  <img src="./satquery-05-western-ghats.png" alt="Forest fire query in Western Ghats" width="100%"/>
+  <img src="./Screenshot%202026-09-04%20110451.png" alt="Forest fire query in Western Ghats" width="100%"/>
 </div>
 
 **Built-in architecture and alerts view.**
 
 <div align="center">
-  <img src="./satquery-06-architecture.png" alt="Architecture and alerts view" width="100%"/>
+  <img src="./Screenshot%202026-09-04%20093543.png" alt="Architecture and alerts view" width="100%"/>
 </div>
 
 **Compact query panel.**
 
 <div align="center">
-  <img src="./satquery-07-compact-panel.png" alt="Compact query console" width="38%"/>
+  <img src="./Screenshot%202026-09-04%20100328.png" alt="Compact query console" width="38%"/>
 </div>
 
 
@@ -352,13 +352,25 @@ Keep API keys (for example the Gemini key) in a `.env` file and never commit it.
 <div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
 
+## Team ZeroOne
+
 <div align="center">
 
-**Team ZeroOne_Atria_SW_26** · Team ID 127589 · Atria Institute of Technology
+<table>
+  <tr>
+    <td align="center" width="260">
+      <a href="https://github.com/chethankp365"><img src="https://github.com/chethankp365.png?size=160" width="110" alt="Chethan Kumar"/></a><br/>
+      <b>Chethan Kumar KP</b><br/>
+      <a href="https://github.com/chethankp365">@chethankp365</a>
+    </td>
+    <td align="center" width="260">
+      <a href="https://github.com/yogendrag196-dev"><img src="https://github.com/yogendrag196-dev.png?size=160" width="110" alt="Yogendra G"/></a><br/>
+      <b>Yogendra G</b><br/>
+      <a href="https://github.com/yogendrag196-dev">@yogendrag196-dev</a>
+    </td>
+  </tr>
+</table>
 
-<!-- Add team members:
-| Name | Role | GitHub |
-|---|---|---|
--->
+Atria Institute of Technology
 
 </div>
