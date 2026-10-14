@@ -4,6 +4,9 @@
 
 <br/>
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20on%20Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://sat-query-ai-murex.vercel.app)
+<br/>
+
 ![Smart India Hackathon 2026](https://img.shields.io/badge/Smart%20India%20Hackathon-2026-FF9933?style=flat-square)
 ![Problem Statement](https://img.shields.io/badge/Problem%20Statement-SIH26167-138808?style=flat-square)
 ![Theme](https://img.shields.io/badge/Theme-Space%20Technology-0b3d5c?style=flat-square)
@@ -17,7 +20,7 @@
 
 **An interactive vision-language assistant for multimodal remote-sensing analysis through plain-text queries.**
 
-[Demo video](https://drive.google.com/file/d/1uGtNYGqfHxEvuASyZqh0dhKWTsbKI3WQ/view?usp=drive_link) · [How it works](#how-it-works) · [Screenshots](#console-screenshots) · [Feasibility](#feasibility)
+[Live demo](https://sat-query-ai-murex.vercel.app) · [Demo video](https://drive.google.com/file/d/1uGtNYGqfHxEvuASyZqh0dhKWTsbKI3WQ/view?usp=drive_link) · [How it works](#how-it-works) · [Screenshots](#console-screenshots) · [Feasibility](#feasibility)
 
 </div>
 
@@ -38,6 +41,16 @@ Ask a question in plain language. An agentic orchestrator validates the input, p
 
 <div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
 
+
+## Live demo
+
+<div align="center">
+
+**Try the running app:** [https://sat-query-ai-murex.vercel.app](https://sat-query-ai-murex.vercel.app)
+
+[![Open live demo](https://img.shields.io/badge/%E2%96%B6%20Launch%20SatQuery%20AI-22d3ee?style=for-the-badge&labelColor=0b3d5c)](https://sat-query-ai-murex.vercel.app)
+
+</div>
 
 ## See it in action
 
@@ -69,51 +82,15 @@ Different questions light up different paths. A ship-counting query uses the det
 
 ### Full flow
 
-```mermaid
-flowchart LR
-    U([Analyst]) -->|plain-language query| A{{Agentic Orchestrator<br/>LLM tool-calling DAG}}
-    A --> V[Input and metadata validation]
-    V --> I[Intent detection]
-    I --> T1[YOLOv8<br/>object detection]
-    I --> T2[NDWI / NDVI / NBR<br/>spectral indices]
-    I --> T3[SSIM / CVA<br/>change detection]
-    I --> T4[Gemini 2.5 VLM<br/>scene reasoning]
-    T1 & T2 & T3 & T4 --> F[Optical, SAR and temporal fusion]
-    F --> E[Evidence and confidence score]
-    E --> M[Geospatial visualization]
-    M --> R([Answer · Alert · Dossier])
-    E -. audit .-> DB[(MongoDB audit trail)]
-
-    style A fill:#0b3d5c,stroke:#22d3ee,color:#fff
-    style F fill:#0b3d5c,stroke:#22d3ee,color:#fff
-    style R fill:#064e3b,stroke:#34d399,color:#fff
-```
+<div align="center">
+  <img src="./full-flow.svg" alt="End-to-end flow from analyst query to evidence-grounded answer" width="100%"/>
+</div>
 
 ### Sequence of a single query
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor User as Commander
-    participant UI as Console (React)
-    participant API as REST API
-    participant Agent as Orchestrator
-    participant CV as CV models
-    participant VLM as Gemini VLM
-    participant DB as Audit DB
-
-    User->>UI: "Count all cargo and naval ships in this harbor area"
-    UI->>API: query + AOI bounding box + sensor composite
-    API->>Agent: validate input, detect intent
-    Agent->>CV: run YOLOv8 on the selected AOI
-    CV-->>Agent: boxes, counts, GeoJSON
-    Agent->>VLM: scene context
-    VLM-->>Agent: qualitative description
-    Note over Agent: Numbers come only from CV output (strict grounding)
-    Agent-->>API: structured intelligence card + confidence
-    API->>DB: log query, tools used, result
-    API-->>UI: markers, metrics, citations
-```
+<div align="center">
+  <img src="./sequence.svg" alt="Sequence of a single query" width="100%"/>
+</div>
 
 
 <div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
@@ -266,23 +243,9 @@ An offline deterministic demo mode keeps the system demonstrable in any environm
 
 ## User flow
 
-```mermaid
-flowchart TD
-    S([Start]) --> Q[Analyst submits a natural-language query]
-    Q --> AOI[Select AOI and time range]
-    AOI --> P[Engine parses intent and routes tools]
-    P --> R[Run specialist tool / Optical–SAR fusion]
-    R --> ST[Status: Processing → Verified]
-    ST --> UP[Upload evidence map and metrics]
-    UP --> C[Compute confidence score]
-    C --> D{Confidence below threshold?}
-    D -- Yes --> H[Decision maker reviews and acts]
-    D -- No --> V[Mark as verified and notify user]
-    H --> E([Verified insights and alerts])
-    V --> E
-    style D fill:#78350f,stroke:#fbbf24,color:#fff
-    style E fill:#064e3b,stroke:#34d399,color:#fff
-```
+<div align="center">
+  <img src="./user-flow.svg" alt="User flow from query to verified insights" width="100%"/>
+</div>
 
 
 <div align="center"><img src="./divider.svg" alt="" width="100%"/></div>
@@ -360,7 +323,7 @@ Keep API keys (for example the Gemini key) in a `.env` file and never commit it.
   <tr>
     <td align="center" width="260">
       <a href="https://github.com/chethankp365"><img src="https://github.com/chethankp365.png?size=160" width="110" alt="Chethan Kumar"/></a><br/>
-      <b>Chethan Kumar KP</b><br/>
+      <b>Chethan Kumar</b><br/>
       <a href="https://github.com/chethankp365">@chethankp365</a>
     </td>
     <td align="center" width="260">
