@@ -46,7 +46,7 @@ Ask a question in plain language. An agentic orchestrator validates the input, p
 
 <div align="center">
 
-**Try the running app:** [https://sat-query-ai-murex.vercel.app](https://sat-query-ai-murex.vercel.app)
+**Try the running app**
 
 [![Open live demo](https://img.shields.io/badge/%E2%96%B6%20Launch%20SatQuery%20AI-22d3ee?style=for-the-badge&labelColor=0b3d5c)](https://sat-query-ai-murex.vercel.app)
 
